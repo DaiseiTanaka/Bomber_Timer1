@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1713376F254483EF00024256 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1713376E254483EF00024256 /* AnimationView.swift */; };
+		172801142539DAD8007B6121 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172801132539DAD8007B6121 /* MainView.swift */; };
+		175A1F2F25386D9D00D8AFBC /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F2E25386D9D00D8AFBC /* SimpleTimer.swift */; };
+		175A1F3125386D9D00D8AFBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F3025386D9D00D8AFBC /* ContentView.swift */; };
+		175A1F3325386DA500D8AFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175A1F3225386DA500D8AFBC /* Assets.xcassets */; };
+		175A1F3625386DA500D8AFBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175A1F3525386DA500D8AFBC /* Preview Assets.xcassets */; };
+		175A1F3825386DA500D8AFBC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F3725386DA500D8AFBC /* Persistence.swift */; };
+		175A1F3B25386DA500D8AFBC /* Qiita_Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F3925386DA500D8AFBC /* Qiita_Timer.xcdatamodeld */; };
+		175A1F4625386DA600D8AFBC /* Qiita_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F4525386DA600D8AFBC /* Qiita_TimerTests.swift */; };
+		175A1F5125386DA600D8AFBC /* Qiita_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F5025386DA600D8AFBC /* Qiita_TimerUITests.swift */; };
+		175A1F6225386ED800D8AFBC /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F6125386ED800D8AFBC /* TimeManager.swift */; };
+		175A1F6725386FC100D8AFBC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F6625386FC100D8AFBC /* Data.swift */; };
+		175A1F6F25388C3400D8AFBC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F6E25388C3400D8AFBC /* PickerView.swift */; };
+		175A1F7A25395EB500D8AFBC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F7925395EB500D8AFBC /* TimerView.swift */; };
+		176F9BA1253B414600238076 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F9BA0253B414600238076 /* ButtonsView.swift */; };
+		17C02DDB2540A0D400352F69 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C02DDA2540A0D400352F69 /* SettingButtonView.swift */; };
+		17C78B3F2541D87C00D5316E /* SoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B3E2541D87C00D5316E /* SoundListView.swift */; };
+		17C78B442542626400D5316E /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B432542626400D5316E /* ProgressBarView.swift */; };
+		17E295B0253F43A800ED063E /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E295AF253F43A800ED063E /* SettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		175A1F4225386DA600D8AFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175A1F2325386D9D00D8AFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175A1F2A25386D9D00D8AFBC;
+			remoteInfo = Qiita_Timer;
+		};
+		175A1F4D25386DA600D8AFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175A1F2325386D9D00D8AFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175A1F2A25386D9D00D8AFBC;
+			remoteInfo = Qiita_Timer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1713376E254483EF00024256 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		172801132539DAD8007B6121 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		175A1F2B25386D9D00D8AFBC /* Qiita_Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiita_Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		175A1F2E25386D9D00D8AFBC /* SimpleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
+		175A1F3025386D9D00D8AFBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		175A1F3225386DA500D8AFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		175A1F3525386DA500D8AFBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		175A1F3725386DA500D8AFBC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		175A1F3A25386DA500D8AFBC /* Qiita_Timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qiita_Timer.xcdatamodel; sourceTree = "<group>"; };
+		175A1F3C25386DA500D8AFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175A1F4125386DA600D8AFBC /* Qiita_TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qiita_TimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		175A1F4525386DA600D8AFBC /* Qiita_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita_TimerTests.swift; sourceTree = "<group>"; };
+		175A1F4725386DA600D8AFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175A1F4C25386DA600D8AFBC /* Qiita_TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qiita_TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		175A1F5025386DA600D8AFBC /* Qiita_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita_TimerUITests.swift; sourceTree = "<group>"; };
+		175A1F5225386DA600D8AFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175A1F6125386ED800D8AFBC /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		175A1F6625386FC100D8AFBC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		175A1F6E25388C3400D8AFBC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		175A1F7925395EB500D8AFBC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		176F9BA0253B414600238076 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		17C02DDA2540A0D400352F69 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
+		17C78B3E2541D87C00D5316E /* SoundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListView.swift; sourceTree = "<group>"; };
+		17C78B432542626400D5316E /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		17E295AF253F43A800ED063E /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		175A1F2825386D9D00D8AFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F3E25386DA600D8AFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F4925386DA600D8AFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		175A1F2225386D9D00D8AFBC = {
+			isa = PBXGroup;
+			children = (
+				175A1F2D25386D9D00D8AFBC /* Qiita_Timer */,
+				175A1F4425386DA600D8AFBC /* Qiita_TimerTests */,
+				175A1F4F25386DA600D8AFBC /* Qiita_TimerUITests */,
+				175A1F2C25386D9D00D8AFBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		175A1F2C25386D9D00D8AFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175A1F2B25386D9D00D8AFBC /* Qiita_Timer.app */,
+				175A1F4125386DA600D8AFBC /* Qiita_TimerTests.xctest */,
+				175A1F4C25386DA600D8AFBC /* Qiita_TimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		175A1F2D25386D9D00D8AFBC /* Qiita_Timer */ = {
+			isa = PBXGroup;
+			children = (
+				175A1F6125386ED800D8AFBC /* TimeManager.swift */,
+				175A1F6625386FC100D8AFBC /* Data.swift */,
+				175A1F2E25386D9D00D8AFBC /* SimpleTimer.swift */,
+				175A1F3025386D9D00D8AFBC /* ContentView.swift */,
+				172801132539DAD8007B6121 /* MainView.swift */,
+				175A1F7925395EB500D8AFBC /* TimerView.swift */,
+				175A1F6E25388C3400D8AFBC /* PickerView.swift */,
+				17C78B432542626400D5316E /* ProgressBarView.swift */,
+				1713376E254483EF00024256 /* AnimationView.swift */,
+				176F9BA0253B414600238076 /* ButtonsView.swift */,
+				17C02DDA2540A0D400352F69 /* SettingButtonView.swift */,
+				17E295AF253F43A800ED063E /* SettingView.swift */,
+				17C78B3E2541D87C00D5316E /* SoundListView.swift */,
+				175A1F3225386DA500D8AFBC /* Assets.xcassets */,
+				175A1F3725386DA500D8AFBC /* Persistence.swift */,
+				175A1F3C25386DA500D8AFBC /* Info.plist */,
+				175A1F3925386DA500D8AFBC /* Qiita_Timer.xcdatamodeld */,
+				175A1F3425386DA500D8AFBC /* Preview Content */,
+			);
+			path = Qiita_Timer;
+			sourceTree = "<group>";
+		};
+		175A1F3425386DA500D8AFBC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				175A1F3525386DA500D8AFBC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		175A1F4425386DA600D8AFBC /* Qiita_TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				175A1F4525386DA600D8AFBC /* Qiita_TimerTests.swift */,
+				175A1F4725386DA600D8AFBC /* Info.plist */,
+			);
+			path = Qiita_TimerTests;
+			sourceTree = "<group>";
+		};
+		175A1F4F25386DA600D8AFBC /* Qiita_TimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				175A1F5025386DA600D8AFBC /* Qiita_TimerUITests.swift */,
+				175A1F5225386DA600D8AFBC /* Info.plist */,
+			);
+			path = Qiita_TimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		175A1F2A25386D9D00D8AFBC /* Qiita_Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175A1F5525386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_Timer" */;
+			buildPhases = (
+				175A1F2725386D9D00D8AFBC /* Sources */,
+				175A1F2825386D9D00D8AFBC /* Frameworks */,
+				175A1F2925386D9D00D8AFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qiita_Timer;
+			productName = Qiita_Timer;
+			productReference = 175A1F2B25386D9D00D8AFBC /* Qiita_Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		175A1F4025386DA600D8AFBC /* Qiita_TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175A1F5825386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerTests" */;
+			buildPhases = (
+				175A1F3D25386DA600D8AFBC /* Sources */,
+				175A1F3E25386DA600D8AFBC /* Frameworks */,
+				175A1F3F25386DA600D8AFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				175A1F4325386DA600D8AFBC /* PBXTargetDependency */,
+			);
+			name = Qiita_TimerTests;
+			productName = Qiita_TimerTests;
+			productReference = 175A1F4125386DA600D8AFBC /* Qiita_TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		175A1F4B25386DA600D8AFBC /* Qiita_TimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175A1F5B25386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerUITests" */;
+			buildPhases = (
+				175A1F4825386DA600D8AFBC /* Sources */,
+				175A1F4925386DA600D8AFBC /* Frameworks */,
+				175A1F4A25386DA600D8AFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				175A1F4E25386DA600D8AFBC /* PBXTargetDependency */,
+			);
+			name = Qiita_TimerUITests;
+			productName = Qiita_TimerUITests;
+			productReference = 175A1F4C25386DA600D8AFBC /* Qiita_TimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		175A1F2325386D9D00D8AFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					175A1F2A25386D9D00D8AFBC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					175A1F4025386DA600D8AFBC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 175A1F2A25386D9D00D8AFBC;
+					};
+					175A1F4B25386DA600D8AFBC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 175A1F2A25386D9D00D8AFBC;
+					};
+				};
+			};
+			buildConfigurationList = 175A1F2625386D9D00D8AFBC /* Build configuration list for PBXProject "Qiita_Timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 175A1F2225386D9D00D8AFBC;
+			productRefGroup = 175A1F2C25386D9D00D8AFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				175A1F2A25386D9D00D8AFBC /* Qiita_Timer */,
+				175A1F4025386DA600D8AFBC /* Qiita_TimerTests */,
+				175A1F4B25386DA600D8AFBC /* Qiita_TimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		175A1F2925386D9D00D8AFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175A1F3625386DA500D8AFBC /* Preview Assets.xcassets in Resources */,
+				175A1F3325386DA500D8AFBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F3F25386DA600D8AFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F4A25386DA600D8AFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		175A1F2725386D9D00D8AFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175A1F3B25386DA500D8AFBC /* Qiita_Timer.xcdatamodeld in Sources */,
+				172801142539DAD8007B6121 /* MainView.swift in Sources */,
+				17C78B3F2541D87C00D5316E /* SoundListView.swift in Sources */,
+				175A1F6725386FC100D8AFBC /* Data.swift in Sources */,
+				175A1F6225386ED800D8AFBC /* TimeManager.swift in Sources */,
+				175A1F3825386DA500D8AFBC /* Persistence.swift in Sources */,
+				1713376F254483EF00024256 /* AnimationView.swift in Sources */,
+				175A1F3125386D9D00D8AFBC /* ContentView.swift in Sources */,
+				176F9BA1253B414600238076 /* ButtonsView.swift in Sources */,
+				175A1F6F25388C3400D8AFBC /* PickerView.swift in Sources */,
+				17C02DDB2540A0D400352F69 /* SettingButtonView.swift in Sources */,
+				175A1F7A25395EB500D8AFBC /* TimerView.swift in Sources */,
+				175A1F2F25386D9D00D8AFBC /* SimpleTimer.swift in Sources */,
+				17E295B0253F43A800ED063E /* SettingView.swift in Sources */,
+				17C78B442542626400D5316E /* ProgressBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F3D25386DA600D8AFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175A1F4625386DA600D8AFBC /* Qiita_TimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175A1F4825386DA600D8AFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175A1F5125386DA600D8AFBC /* Qiita_TimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		175A1F4325386DA600D8AFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 175A1F2A25386D9D00D8AFBC /* Qiita_Timer */;
+			targetProxy = 175A1F4225386DA600D8AFBC /* PBXContainerItemProxy */;
+		};
+		175A1F4E25386DA600D8AFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 175A1F2A25386D9D00D8AFBC /* Qiita_Timer */;
+			targetProxy = 175A1F4D25386DA600D8AFBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		175A1F5325386DA600D8AFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		175A1F5425386DA600D8AFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		175A1F5625386DA600D8AFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiita_Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiita_Timer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-Timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		175A1F5725386DA600D8AFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiita_Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiita_Timer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-Timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		175A1F5925386DA600D8AFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				INFOPLIST_FILE = Qiita_TimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiita_Timer.app/Qiita_Timer";
+			};
+			name = Debug;
+		};
+		175A1F5A25386DA600D8AFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				INFOPLIST_FILE = Qiita_TimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiita_Timer.app/Qiita_Timer";
+			};
+			name = Release;
+		};
+		175A1F5C25386DA600D8AFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				INFOPLIST_FILE = Qiita_TimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qiita_Timer;
+			};
+			name = Debug;
+		};
+		175A1F5D25386DA600D8AFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				INFOPLIST_FILE = Qiita_TimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qiita_Timer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		175A1F2625386D9D00D8AFBC /* Build configuration list for PBXProject "Qiita_Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175A1F5325386DA600D8AFBC /* Debug */,
+				175A1F5425386DA600D8AFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175A1F5525386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175A1F5625386DA600D8AFBC /* Debug */,
+				175A1F5725386DA600D8AFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175A1F5825386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175A1F5925386DA600D8AFBC /* Debug */,
+				175A1F5A25386DA600D8AFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175A1F5B25386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175A1F5C25386DA600D8AFBC /* Debug */,
+				175A1F5D25386DA600D8AFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		175A1F3925386DA500D8AFBC /* Qiita_Timer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				175A1F3A25386DA500D8AFBC /* Qiita_Timer.xcdatamodel */,
+			);
+			currentVersion = 175A1F3A25386DA500D8AFBC /* Qiita_Timer.xcdatamodel */;
+			path = Qiita_Timer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 175A1F2325386D9D00D8AFBC /* Project object */;
+}
