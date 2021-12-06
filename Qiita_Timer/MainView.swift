@@ -16,7 +16,7 @@ struct MainView: View {
             if timeManager.isEffectAnimationOn && timeManager.timerStatus != .stopped {
                 AnimationView()
             }
-            
+
             if timeManager.isProgressBarOn {
                 ProgressBarView()
             }
@@ -57,9 +57,13 @@ struct MainView: View {
                 //タイマーステータスを.stoppedに変更する
                 self.timeManager.timerStatus = .stopped
                 //アラーム音を鳴らす
-                AudioServicesPlayAlertSoundWithCompletion(self.timeManager.soundID, nil)
+                if timeManager.isAlarmOn {
+                    AudioServicesPlayAlertSoundWithCompletion(self.timeManager.soundID, nil)
+                }
                 //バイブレーションを作動させる
-                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {}
+                if timeManager.isVibrationOn {
+                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {}
+                }
             }
         }
     }

@@ -14,7 +14,7 @@ struct SimpleTimer: App {
     var body: some Scene {
         
         WindowGroup {
-            MainView()
+            MainView().environmentObject(TimeManager())
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

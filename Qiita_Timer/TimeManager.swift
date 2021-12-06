@@ -56,11 +56,6 @@ class TimeManager: ObservableObject {
         } else {
             displayedTimeFormat = .hr
         }
-        
-        // add below later
-        //        if duration != 0 {
-        //            timerStatus = .pause
-        //        }
     }
     
     //カウントダウン中の残り時間を表示するためのメソッド

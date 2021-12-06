@@ -22,6 +22,7 @@
 		175A1F6F25388C3400D8AFBC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F6E25388C3400D8AFBC /* PickerView.swift */; };
 		175A1F7A25395EB500D8AFBC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175A1F7925395EB500D8AFBC /* TimerView.swift */; };
 		176F9BA1253B414600238076 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F9BA0253B414600238076 /* ButtonsView.swift */; };
+		1782263F254A96AE001A5679 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782263E254A96AE001A5679 /* TestView.swift */; };
 		17C02DDB2540A0D400352F69 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C02DDA2540A0D400352F69 /* SettingButtonView.swift */; };
 		17C78B3F2541D87C00D5316E /* SoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B3E2541D87C00D5316E /* SoundListView.swift */; };
 		17C78B442542626400D5316E /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B432542626400D5316E /* ProgressBarView.swift */; };
@@ -67,6 +68,7 @@
 		175A1F6E25388C3400D8AFBC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		175A1F7925395EB500D8AFBC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		176F9BA0253B414600238076 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		1782263E254A96AE001A5679 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		17C02DDA2540A0D400352F69 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
 		17C78B3E2541D87C00D5316E /* SoundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListView.swift; sourceTree = "<group>"; };
 		17C78B432542626400D5316E /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				175A1F6E25388C3400D8AFBC /* PickerView.swift */,
 				17C78B432542626400D5316E /* ProgressBarView.swift */,
 				1713376E254483EF00024256 /* AnimationView.swift */,
+				1782263E254A96AE001A5679 /* TestView.swift */,
 				176F9BA0253B414600238076 /* ButtonsView.swift */,
 				17C02DDA2540A0D400352F69 /* SettingButtonView.swift */,
 				17E295AF253F43A800ED063E /* SettingView.swift */,
@@ -302,6 +305,7 @@
 				172801142539DAD8007B6121 /* MainView.swift in Sources */,
 				17C78B3F2541D87C00D5316E /* SoundListView.swift in Sources */,
 				175A1F6725386FC100D8AFBC /* Data.swift in Sources */,
+				1782263F254A96AE001A5679 /* TestView.swift in Sources */,
 				175A1F6225386ED800D8AFBC /* TimeManager.swift in Sources */,
 				175A1F3825386DA500D8AFBC /* Persistence.swift in Sources */,
 				1713376F254483EF00024256 /* AnimationView.swift in Sources */,
