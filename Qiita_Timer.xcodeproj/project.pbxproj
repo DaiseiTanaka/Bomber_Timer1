@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,12 @@
 		17C78B3F2541D87C00D5316E /* SoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B3E2541D87C00D5316E /* SoundListView.swift */; };
 		17C78B442542626400D5316E /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C78B432542626400D5316E /* ProgressBarView.swift */; };
 		17E295B0253F43A800ED063E /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E295AF253F43A800ED063E /* SettingView.swift */; };
+		3505194B28B2407200CAA080 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3505194A28B2407100CAA080 /* Banner.swift */; };
+		351168E228AD33FF008936F8 /* explosion3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 351168E128AD33FF008936F8 /* explosion3.mp3 */; };
+		351168E428AE7925008936F8 /* TimeOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351168E328AE7925008936F8 /* TimeOver.swift */; };
+		7255155574E0D17CAF90ACD0 /* Pods_Qiita_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C36D9076CE43ED9B1A0E70 /* Pods_Qiita_Timer.framework */; };
+		76CCD91C964065E442CF878A /* Pods_Qiita_TimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151373E3399E8BEE06D9311D /* Pods_Qiita_TimerTests.framework */; };
+		BAC3C01889710304CA5F8904 /* Pods_Qiita_Timer_Qiita_TimerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67744B3BED2D4311F2338E9 /* Pods_Qiita_Timer_Qiita_TimerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028FC10C284F5E9C7D914347 /* Pods-Qiita_Timer-Qiita_TimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_Timer-Qiita_TimerUITests.release.xcconfig"; path = "Target Support Files/Pods-Qiita_Timer-Qiita_TimerUITests/Pods-Qiita_Timer-Qiita_TimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A45555C9F8C01F3556911BD /* Pods-Qiita_Timer-Qiita_TimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_Timer-Qiita_TimerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Qiita_Timer-Qiita_TimerUITests/Pods-Qiita_Timer-Qiita_TimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B121983E7A5AC8A9CE91AE1 /* Pods-Qiita_Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_Timer.release.xcconfig"; path = "Target Support Files/Pods-Qiita_Timer/Pods-Qiita_Timer.release.xcconfig"; sourceTree = "<group>"; };
+		151373E3399E8BEE06D9311D /* Pods_Qiita_TimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qiita_TimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1713376E254483EF00024256 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		172801132539DAD8007B6121 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		175A1F2B25386D9D00D8AFBC /* Qiita_Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiita_Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +83,14 @@
 		17C78B3E2541D87C00D5316E /* SoundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListView.swift; sourceTree = "<group>"; };
 		17C78B432542626400D5316E /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		17E295AF253F43A800ED063E /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2B0747C049760CA8F4BAE438 /* Pods-Qiita_Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_Timer.debug.xcconfig"; path = "Target Support Files/Pods-Qiita_Timer/Pods-Qiita_Timer.debug.xcconfig"; sourceTree = "<group>"; };
+		3505194A28B2407100CAA080 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		351168E128AD33FF008936F8 /* explosion3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion3.mp3; sourceTree = "<group>"; };
+		351168E328AE7925008936F8 /* TimeOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOver.swift; sourceTree = "<group>"; };
+		3E19AB87D3677EB5FD1FFD38 /* Pods-Qiita_TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_TimerTests.release.xcconfig"; path = "Target Support Files/Pods-Qiita_TimerTests/Pods-Qiita_TimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		53C36D9076CE43ED9B1A0E70 /* Pods_Qiita_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qiita_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950AEB32EBB048EEAB80A656 /* Pods-Qiita_TimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiita_TimerTests.debug.xcconfig"; path = "Target Support Files/Pods-Qiita_TimerTests/Pods-Qiita_TimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C67744B3BED2D4311F2338E9 /* Pods_Qiita_Timer_Qiita_TimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qiita_Timer_Qiita_TimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7255155574E0D17CAF90ACD0 /* Pods_Qiita_Timer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CCD91C964065E442CF878A /* Pods_Qiita_TimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC3C01889710304CA5F8904 /* Pods_Qiita_Timer_Qiita_TimerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +128,8 @@
 				175A1F4425386DA600D8AFBC /* Qiita_TimerTests */,
 				175A1F4F25386DA600D8AFBC /* Qiita_TimerUITests */,
 				175A1F2C25386D9D00D8AFBC /* Products */,
+				CC9C3F2F5D92378561F496A4 /* Pods */,
+				69F7F43ADB97928FDFF391C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +160,10 @@
 				17C02DDA2540A0D400352F69 /* SettingButtonView.swift */,
 				17E295AF253F43A800ED063E /* SettingView.swift */,
 				17C78B3E2541D87C00D5316E /* SoundListView.swift */,
+				351168E328AE7925008936F8 /* TimeOver.swift */,
+				3505194A28B2407100CAA080 /* Banner.swift */,
 				175A1F3225386DA500D8AFBC /* Assets.xcassets */,
+				351168E128AD33FF008936F8 /* explosion3.mp3 */,
 				175A1F3725386DA500D8AFBC /* Persistence.swift */,
 				175A1F3C25386DA500D8AFBC /* Info.plist */,
 				175A1F3925386DA500D8AFBC /* Qiita_Timer.xcdatamodeld */,
@@ -172,6 +198,29 @@
 			path = Qiita_TimerUITests;
 			sourceTree = "<group>";
 		};
+		69F7F43ADB97928FDFF391C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C36D9076CE43ED9B1A0E70 /* Pods_Qiita_Timer.framework */,
+				C67744B3BED2D4311F2338E9 /* Pods_Qiita_Timer_Qiita_TimerUITests.framework */,
+				151373E3399E8BEE06D9311D /* Pods_Qiita_TimerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC9C3F2F5D92378561F496A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B0747C049760CA8F4BAE438 /* Pods-Qiita_Timer.debug.xcconfig */,
+				0B121983E7A5AC8A9CE91AE1 /* Pods-Qiita_Timer.release.xcconfig */,
+				0A45555C9F8C01F3556911BD /* Pods-Qiita_Timer-Qiita_TimerUITests.debug.xcconfig */,
+				028FC10C284F5E9C7D914347 /* Pods-Qiita_Timer-Qiita_TimerUITests.release.xcconfig */,
+				950AEB32EBB048EEAB80A656 /* Pods-Qiita_TimerTests.debug.xcconfig */,
+				3E19AB87D3677EB5FD1FFD38 /* Pods-Qiita_TimerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 175A1F5525386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_Timer" */;
 			buildPhases = (
+				0F15C01164161B6C66470AEA /* [CP] Check Pods Manifest.lock */,
 				175A1F2725386D9D00D8AFBC /* Sources */,
 				175A1F2825386D9D00D8AFBC /* Frameworks */,
 				175A1F2925386D9D00D8AFBC /* Resources */,
+				7F9603E75B40FAC1D584ABE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 175A1F5825386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerTests" */;
 			buildPhases = (
+				F6B6C518FCAA3E6253F0EF4B /* [CP] Check Pods Manifest.lock */,
 				175A1F3D25386DA600D8AFBC /* Sources */,
 				175A1F3E25386DA600D8AFBC /* Frameworks */,
 				175A1F3F25386DA600D8AFBC /* Resources */,
@@ -214,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 175A1F5B25386DA600D8AFBC /* Build configuration list for PBXNativeTarget "Qiita_TimerUITests" */;
 			buildPhases = (
+				C09E74DEE12BAA0C23CC11EE /* [CP] Check Pods Manifest.lock */,
 				175A1F4825386DA600D8AFBC /* Sources */,
 				175A1F4925386DA600D8AFBC /* Frameworks */,
 				175A1F4A25386DA600D8AFBC /* Resources */,
+				06FD6EA1AADB365B8BFC1847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351168E228AD33FF008936F8 /* explosion3.mp3 in Resources */,
 				175A1F3625386DA500D8AFBC /* Preview Assets.xcassets in Resources */,
 				175A1F3325386DA500D8AFBC /* Assets.xcassets in Resources */,
 			);
@@ -296,6 +351,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06FD6EA1AADB365B8BFC1847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer-Qiita_TimerUITests/Pods-Qiita_Timer-Qiita_TimerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer-Qiita_TimerUITests/Pods-Qiita_Timer-Qiita_TimerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer-Qiita_TimerUITests/Pods-Qiita_Timer-Qiita_TimerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F15C01164161B6C66470AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qiita_Timer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F9603E75B40FAC1D584ABE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer/Pods-Qiita_Timer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer/Pods-Qiita_Timer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qiita_Timer/Pods-Qiita_Timer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C09E74DEE12BAA0C23CC11EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qiita_Timer-Qiita_TimerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B6C518FCAA3E6253F0EF4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qiita_TimerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		175A1F2725386D9D00D8AFBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,8 +473,10 @@
 				17C02DDB2540A0D400352F69 /* SettingButtonView.swift in Sources */,
 				175A1F7A25395EB500D8AFBC /* TimerView.swift in Sources */,
 				175A1F2F25386D9D00D8AFBC /* SimpleTimer.swift in Sources */,
+				3505194B28B2407200CAA080 /* Banner.swift in Sources */,
 				17E295B0253F43A800ED063E /* SettingView.swift in Sources */,
 				17C78B442542626400D5316E /* ProgressBarView.swift in Sources */,
+				351168E428AE7925008936F8 /* TimeOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -470,12 +630,13 @@
 		};
 		175A1F5625386DA600D8AFBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0747C049760CA8F4BAE438 /* Pods-Qiita_Timer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Qiita_Timer/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				DEVELOPMENT_TEAM = NZ6NQZK56A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Qiita_Timer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -483,7 +644,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-Timer";
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bomb.timer.daiseitanaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,12 +654,13 @@
 		};
 		175A1F5725386DA600D8AFBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B121983E7A5AC8A9CE91AE1 /* Pods-Qiita_Timer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Qiita_Timer/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UDW6XQQCM;
+				DEVELOPMENT_TEAM = NZ6NQZK56A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Qiita_Timer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -505,7 +668,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.whitemagiccoding.Qiita-Timer";
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bomb.timer.daiseitanaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,6 +678,7 @@
 		};
 		175A1F5925386DA600D8AFBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950AEB32EBB048EEAB80A656 /* Pods-Qiita_TimerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +701,7 @@
 		};
 		175A1F5A25386DA600D8AFBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E19AB87D3677EB5FD1FFD38 /* Pods-Qiita_TimerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +724,7 @@
 		};
 		175A1F5C25386DA600D8AFBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A45555C9F8C01F3556911BD /* Pods-Qiita_Timer-Qiita_TimerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +745,7 @@
 		};
 		175A1F5D25386DA600D8AFBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028FC10C284F5E9C7D914347 /* Pods-Qiita_Timer-Qiita_TimerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

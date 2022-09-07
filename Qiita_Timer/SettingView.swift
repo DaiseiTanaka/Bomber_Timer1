@@ -33,14 +33,14 @@ struct SettingView: View {
                         }
                     }
                 }
-                Section(header: Text("Animation:")) {
-                    Toggle(isOn: $timeManager.isProgressBarOn) {
-                        Text("Progress Bar")
-                    }
-                    Toggle(isOn: $timeManager.isEffectAnimationOn) {
-                        Text("Effect Animation")
-                    }
-                }
+//                Section(header: Text("Animation:")) {
+//                    Toggle(isOn: $timeManager.isProgressBarOn) {
+//                        Text("Progress Bar")
+//                    }
+//                    Toggle(isOn: $timeManager.isEffectAnimationOn) {
+//                        Text("Effect Animation")
+//                    }
+//                }
                 Section(header: Text("Save:")) {
                     Button(action: {
                         //モーダルを閉じる

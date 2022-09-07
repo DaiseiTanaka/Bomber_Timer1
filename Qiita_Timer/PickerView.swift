@@ -24,54 +24,73 @@ struct PickerView: View {
     var body: some View {
         //ZStackでPickerとレイヤーで重なるようにボタンを配置
         ZStack{
-            //時間、分、秒のPickerとそれぞれの単位を示すテキストをHStackで横並びに
-            HStack {
-                //時間単位のPicker
-                Picker(selection: self.$timeManager.hourSelection, label: Text("hour")) {
-                    ForEach(0 ..< self.hours.count) { index in
-                        Text("\(self.hours[index])")
-                            .tag(index)
-                    }
-                }
-                //上下に回転するホイールスタイルを指定
-                .pickerStyle(WheelPickerStyle())
-                //ピッカーの幅をスクリーンサイズ x 0.1、高さをスクリーンサイズ x 0.4で指定
-                .frame(width: self.screenWidth * 0.1, height: self.screenWidth * 0.4)
-                //上のframeでクリップし、フレームからはみ出す部分は非表示にする
-                .clipped()
-                //時間単位を表すテキスト
-                Text("hour")
-                    .font(.headline)
+            VStack {
                 
-                //分単位のPicker
-                Picker(selection: self.$timeManager.minSelection, label: Text("minute")) {
-                    ForEach(0 ..< self.minutes.count) { index in
-                        Text("\(self.minutes[index])")
-                            .tag(index)
+                //時間、分、秒のPickerとそれぞれの単位を示すテキストをHStackで横並びに
+                HStack(spacing: 0) {
+                    //時間単位のPicker
+                    //                Picker(selection: self.$timeManager.hourSelection, label: Text("hour")) {
+                    //                    ForEach(0 ..< self.hours.count) { index in
+                    //                        Text("\(self.hours[index])")
+                    //                            .tag(index)
+                    //                    }
+                    //                }
+                    //                //上下に回転するホイールスタイルを指定
+                    //                .pickerStyle(WheelPickerStyle())
+                    //                //ピッカーの幅をスクリーンサイズ x 0.1、高さをスクリーンサイズ x 0.4で指定
+                    //                .frame(width: self.screenWidth * 0.1, height: self.screenWidth * 0.4)
+                    //                //上のframeでクリップし、フレームからはみ出す部分は非表示にする
+                    //                .clipped()
+                    //                //時間単位を表すテキスト
+                    //                Text("hour")
+                    //                    .font(.headline)
+                    
+                    //分単位のPicker
+                    Picker(selection: self.$timeManager.minSelection, label: Text("minute")) {
+                        ForEach(0 ..< self.minutes.count) { index in
+                            Text("\(self.minutes[index])")
+                                .tag(index)
+                        }
                     }
-                }
-                .pickerStyle(WheelPickerStyle())
-                .frame(width: self.screenWidth * 0.1, height: self.screenWidth * 0.4)
-                .clipped()
-                //分単位を表すテキスト
-                Text("min")
-                    .font(.headline)
-                
-                //秒単位のPicker
-                Picker(selection: self.$timeManager.secSelection, label: Text("second")) {
-                    ForEach(0 ..< self.seconds.count) { index in
-                        Text("\(self.seconds[index])")
-                            .tag(index)
+                    .pickerStyle(WheelPickerStyle())
+                    .compositingGroup()
+                    .clipped(antialiased: true)
+                    //.fixedSize(horizontal: true, vertical: true)
+                    
+                    //分単位を表すテキスト
+                    Text("min")
+                        .font(.headline)
+                    
+                    //秒単位のPicker
+                    Picker(selection: self.$timeManager.secSelection, label: Text("second")) {
+                        ForEach(0 ..< self.seconds.count) { index in
+                            Text("\(self.seconds[index])")
+                                .tag(index)
+                        }
                     }
+                    .pickerStyle(WheelPickerStyle())
+//                    .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.2, alignment: .center)
+//                    //.fixedSize(horizontal: true, vertical: true)
+//                    .clipped()
+                    .compositingGroup()
+                    .clipped(antialiased: true)
+                    
+                    //秒単位を表すテキスト
+                    Text("sec")
+                        .font(.headline)
                 }
-                .pickerStyle(WheelPickerStyle())
-                .frame(width:self.screenWidth * 0.1, height: self.screenWidth * 0.4)
-                .clipped()
-                //秒単位を表すテキスト
-                Text("sec")
-                    .font(.headline)
+                .padding(.horizontal)
+                .frame(width: 300, height: 100, alignment: .center)
             }
         }
+    }
+}
+
+// タップしてないところが動くのを防ぐ
+extension UIPickerView {
+    open override var intrinsicContentSize: CGSize {
+        //return CGSize(width: 200, height: 160)
+        return CGSize(width: UIView.noIntrinsicMetric - 50, height: 160)
     }
 }
 

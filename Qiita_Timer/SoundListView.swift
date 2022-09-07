@@ -12,6 +12,7 @@ struct SoundListView: View {
     @EnvironmentObject var timeManager: TimeManager
     
     let sounds: [Sound] = [
+        Sound(id: 1150, soundName: "Bomber"),
         Sound(id: 1151, soundName: "Beat"),
         Sound(id: 1304, soundName: "Alert"),
         Sound(id: 1309, soundName: "Glass"),

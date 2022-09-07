@@ -1,0 +1,6 @@
+framework module Pods_Qiita_Timer_Qiita_TimerUITests {
+  umbrella header "Pods-Qiita_Timer-Qiita_TimerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

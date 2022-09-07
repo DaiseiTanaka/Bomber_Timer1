@@ -8,7 +8,7 @@
 import SwiftUI
 import AudioToolbox
 
-class TimeManager: ObservableObject {
+class TimeManager: ObservableObject {    
     //Pickerで設定した"時間"を格納する変数
     @Published var hourSelection: Int = 0
     //Pickerで設定した"分"を格納する変数
@@ -24,9 +24,9 @@ class TimeManager: ObservableObject {
     //タイマーのステータス
     @Published var timerStatus: TimerStatus = .stopped
     //AudioToolboxに格納された音源を利用するためのデータ型でデフォルトのサウンドIDを格納
-    @Published var soundID: SystemSoundID = 1151
+    @Published var soundID: SystemSoundID = 1150
     //soundIDプロパティの値に対応するサウンド名を格納
-    @Published var soundName: String = "Beat"
+    @Published var soundName: String = "Bomber"
     //アラーム音オン/オフの設定
     @Published var isAlarmOn: Bool = true
     //バイブレーションオン/オフの設定
@@ -39,6 +39,8 @@ class TimeManager: ObservableObject {
     @Published var isSetting: Bool = false
     //1秒ごとに発動するTimerクラスのpublishメソッド
     var timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
+    
+    @Published var show: Bool = false
     
     //Pickerで取得した値からカウントダウン残り時間とカウントダウン開始前の最大時間を計算しその値によって時間表示形式も指定する
     func setTimer() {
@@ -65,16 +67,30 @@ class TimeManager: ObservableObject {
         //残り時間（分単位）= 残り合計時間（秒）/ 3600秒 で割った余り / 60秒
         let min = Int(duration) % 3600 / 60
         //残り時間（秒単位）= 残り合計時間（秒）/ 3600秒 で割った余り / 60秒 で割った余り
-        let sec = Int(duration) % 3600 % 60
+        let sec = Int(duration) % 3600 % 60 + 1
         
+        //print(Int(duration))
         //setTimerメソッドの結果によって時間表示形式を条件分岐し、上の3つの定数を組み合わせて反映
         switch displayedTimeFormat {
         case .hr:
             return String(format: "%02d:%02d:%02d", hr, min, sec)
         case .min:
-            return String(format: "%02d:%02d", min, sec)
+            if Int(duration) > 59 && Int(duration) % 60 != 59{
+                return String(format: "%02d:%02d", min, sec)
+            } else if Int(duration) % 60 == 59 {
+                return String(format: "%02d:00", min+1)
+            } else if Int(duration) > 9{  // 1分未満の時は2桁のみ表示
+                return String(format: "%02d", sec)
+            } else {
+                return String("\(sec)")
+            }
+            
         case .sec:
-            return String(format: "%02d", sec)
+            if Int(duration) > 9 {
+                return String(format: "%02d", sec)
+            } else {
+                return String("\(sec)")
+            }
         }
     }
     
@@ -96,5 +112,7 @@ class TimeManager: ObservableObject {
         timerStatus = .stopped
         //残り時間がまだ0でなくても強制的に0にする
         duration = 0
+        
+        show = false
     }
 }

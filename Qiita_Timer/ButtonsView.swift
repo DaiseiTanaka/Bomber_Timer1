@@ -13,23 +13,34 @@ struct ButtonsView: View {
     var body: some View {
         HStack {
             //リセットボタン
-            Image(systemName: "stop.circle.fill")
+            //Image(systemName: "stop.circle.fill")
+            Image(systemName: "house.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 75, height: 75)
                 //ボタンの左側とスクリーンの端にスペースをとる
                 .padding(.leading)
                 //タイマーステータスが終了なら透明度を0.1に、そうでなければ不透明に
-                .opacity(self.timeManager.timerStatus == .stopped ? 0.1 : 1)
+                .opacity((self.timeManager.minSelection == 0 && self.timeManager.secSelection == 0 && self.timeManager.timerStatus == .stopped) ? 0.1 : 1)
                 //ボタンをタップしたときのアクション
                 .onTapGesture {
                     // debug
-                    //print(self.timeManager.timerStatus)
+                    print(self.timeManager.timerStatus)
                     //タイマーステータスが.stopped以外の場合
-                    if timeManager.timerStatus != .stopped {
+                    if timeManager.timerStatus == .running || timeManager.timerStatus == .pause {
                         self.timeManager.reset()
+                        //self.timeManager.duration = 0
+                    } else {
+                        self.timeManager.hourSelection = 0
+                        self.timeManager.minSelection = 0
+                        self.timeManager.secSelection = 0
                     }
+                    self.timeManager.show = false
+                    
                 }
+//                .fullScreenCover(isPresented: $timeManager.show) {
+//                    MainView().environmentObject(self.timeManager)
+//                }
             
             //ボタンとボタンの間隔をあける
             Spacer()
@@ -46,7 +57,7 @@ struct ButtonsView: View {
                 //ボタンをタップした時のアクション
                 .onTapGesture {
                     // debug
-                    //print(self.timeManager.timerStatus)
+                    print(self.timeManager.timerStatus)
                     if timeManager.timerStatus == .stopped {
                         self.timeManager.setTimer()
                     }
