@@ -1,7 +1,5 @@
-# Qiita_Timer
+# Bomber_Timer
 
-This is a sample of iOS application. It is just a simple countdown timer.
-I published some articles which explain how to create this app on Qiita web site below.
-https://qiita.com/masanaosako/items/a0d89c0f282e664aa2be
+I published this app for AppStore
+https://apps.apple.com/jp/app/id1640816018
 
-Please use the sample files with the articles on Qiita for your understanding iOS devs, I am also a bigginer though.
